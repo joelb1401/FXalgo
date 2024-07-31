@@ -12,8 +12,8 @@ if not mt5.initialize():
     quit()
 
 # Define account details
-account = 83444227
-password = "A@DgU3Ac"
+account = #acc number
+password = #"password"
 server = "MetaQuotes-Demo"
 
 # Log in to the account
