@@ -35,8 +35,8 @@ hold_time = None
 closed_orders = []  # List to keep track of closed orders
 
 # Pushover API details
-pushover_user_key = 'uga45pseh3u7ip3pkbsu1zqjttxf9q'
-pushover_api_token = 'a7i4pbj4t1b3ugfei2s3424p62o8jr'
+pushover_user_key = #noti user key
+pushover_api_token = #noti api token
 
 
 # Function to send a Pushover notification
@@ -120,7 +120,7 @@ def get_account_balance():
 
 
 # Function to calculate buy order size based on a percentage of account capital
-def buy_order_size(risk=1):
+def buy_order_size(risk=0.01):
     global account_balance
     if account_balance is not None:
         order_value = account_balance * risk
@@ -137,7 +137,7 @@ def buy_order_size(risk=1):
 
 
 # Function to calculate sell order size based on a percentage of account capital
-def sell_order_size(risk=1):
+def sell_order_size(risk=0.01):
     global account_balance
     if account_balance is not None:
         order_value = account_balance * risk
